@@ -17,7 +17,7 @@ import java.util.List;
 public class StaffAction extends ActionSupport {
 
     private List<Department> departList;// 存储所有部门的集合
-    private List<Post> postList;
+    private List<Post> postList;  // 存储所有职务的集合
 
     {
 //        初始化部门数据
