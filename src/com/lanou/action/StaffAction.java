@@ -66,6 +66,7 @@ public class StaffAction extends ActionSupport {
         JsonConfig jsonConfig = new JsonConfig();
         String jsonArray = JSONArray.fromObject(postList, jsonConfig).toString();
 
+        // 设置编码
         ServletActionContext.getResponse().setContentType("application/json;charset=utf-8");
         ServletActionContext.getResponse().getWriter().print(jsonArray);
         return null;
