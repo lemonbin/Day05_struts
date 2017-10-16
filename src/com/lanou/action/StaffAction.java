@@ -63,6 +63,7 @@ public class StaffAction extends ActionSupport {
         //根据部门id获取该部门下的所有职务集合
         List<Post> postList = departList.get(dId).getPostList();
 
+        /*json对象的封装*/
         JsonConfig jsonConfig = new JsonConfig();
         String jsonArray = JSONArray.fromObject(postList, jsonConfig).toString();
 
